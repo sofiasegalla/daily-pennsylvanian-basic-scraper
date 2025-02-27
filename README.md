@@ -18,4 +18,12 @@ You can run the scraper with the following:
 ```sh
 python scraper.py
 ```
+## Cron Syntax
 
+The cron syntax "0 20 * * *" basically means the scraper will run once a day at 8:00 PM UTC. Breaking it down:
+
+1. First number 0 = at the top of the hour (0 minutes)
+2. Second number 20 = at 8 PM (using 24-hour time)
+3. Asterisks * * * = every day, every month, all year round
+
+The scraper is set to automatically kick off every evening at the same time.
